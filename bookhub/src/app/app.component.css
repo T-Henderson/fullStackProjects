@@ -1,12 +1,9 @@
-.toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #1e8667;
-    color: white;
-    font-weight: 600;
-  }
+.bookHubLabel{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 200%;
+}
+
+.bookHubLabelBorder {
+  border: 10px solid black;
+  box-shadow: 0 10px 20px rgba(0,0,0, .1);
+}

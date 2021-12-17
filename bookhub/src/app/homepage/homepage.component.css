@@ -1,0 +1,20 @@
+.h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+    text-align: center;
+    
+}
+
+.container {
+    padding: 15%;
+    margin: auto;
+    border: 2px solid black;
+    align-items: center;
+}
+
+.messageBoardContainer {
+    padding: 15%;
+    margin: auto;
+    border: 2px solid black;
+    align-items: center;
+}
