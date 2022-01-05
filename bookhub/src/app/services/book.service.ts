@@ -9,9 +9,10 @@ import { Observable } from 'rxjs';
 })
 export class BookService {
 
-  private apiUrl = 'http://localhost:5000/';//add full thing later or maybe remove
+  //private apiUrl = 'http://localhost:5000/';//add full thing later or maybe remove
 
-  constructor(private http: HttpClient) { }
+  constructor() { }//don't put httpclient here yet because it screws up homepage. 
+  //books do not show.
 
   getBooks(): Book[] {
     return BOOKS;
