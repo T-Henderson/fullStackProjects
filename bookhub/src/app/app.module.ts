@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BookItemComponent } from './components/book-item/book-item.component';
+import { BooksComponent } from './components/books/books.component';
 
 const appRoutes: Routes = [
   {path:'', component: HomepageComponent},//this should redirect to homepage
@@ -19,7 +21,9 @@ const appRoutes: Routes = [
     AppComponent,
     HomepageComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    BookItemComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
