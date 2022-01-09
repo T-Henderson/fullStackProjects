@@ -1,4 +1,5 @@
-<div class="book">
+<div class="book" *ngIf="book.bestSeller == true">
+    <!--add titles for these to show up on the home page. ex: Title: blah blah, Author: blah de bleh.-->
     <h3>{{ book.bookTitle }}</h3>
     <p>{{ book.bookAuthor }}</p>
 </div>

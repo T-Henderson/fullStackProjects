@@ -37,4 +37,9 @@ export class BookItemComponent implements OnInit {
     }
   }
 
+  /*place above functions within the HTML for this component later or tomorrow.
+  Use the TaskTracker app as a guide to do so. Hopefully this works as intended.
+  A potential snag might be if both newArrival and bestSeller are true, they would show 
+  up regardless of section. Though it shouldn't be too much of a problem. 
+  */
 }
