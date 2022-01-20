@@ -14,7 +14,7 @@ export class BookService {
   constructor() { }//don't put httpclient here yet because it screws up homepage. 
   //books do not show.
 
-  getBooks(): Book[] {
+  getBooks(): Book[] {//need to add observable here. can then use subscribe in books component
     return BOOKS;
   }
 }
