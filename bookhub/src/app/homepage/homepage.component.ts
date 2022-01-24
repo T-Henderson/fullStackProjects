@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Book } from '../Book';
 import { BOOKS } from '../book-list';
 import { BookService } from '../services/book.service';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -11,9 +12,10 @@ import { BookService } from '../services/book.service';
 export class HomepageComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    
   }
 
 }
