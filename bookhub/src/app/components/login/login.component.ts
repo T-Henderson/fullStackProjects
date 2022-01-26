@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { RouterModule,Routes } from '@angular/router';
 
 @Component({
@@ -9,11 +10,12 @@ import { RouterModule,Routes } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  loginForm: FormGroup = new FormGroup({});
+
+  constructor(private router: Router, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
-    this.router.navigate(['/login']);//brings back the page. However, it's stuck on the homepage. the
-    //auot generated login works isn't showing up
+    
   }
 
 }

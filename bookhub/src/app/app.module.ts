@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { BooksComponent } from './components/books/books.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    ReactiveFormsModule
     //RouterModule.forRoot(appRoutes)
   ],
   providers: [],
