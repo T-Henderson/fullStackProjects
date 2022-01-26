@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/Book';
-import { BookService } from 'src/app/services/book.service';
+import { BookService } from './book.service';
 
 @Component({
   selector: 'app-books',
@@ -14,7 +14,7 @@ export class BooksComponent implements OnInit {
   constructor(private bookService: BookService) { }
 
   ngOnInit(): void {
-    this.bookService.getBooks();//will add subscribe method later
+    this.books = this.bookService.getBooks();
   }
 
 }
