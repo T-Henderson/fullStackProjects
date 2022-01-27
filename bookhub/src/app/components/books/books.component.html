@@ -1,3 +1,7 @@
-<div *ngFor="let book of books">
-
+<div class="books">
+    <div class="book" *ngFor="let book of books">
+        <p><b>Title: </b>{{book.bookTitle}}</p><!--make two-way data binding at some point
+            would allow the specific book clicked on to see all details of it-->
+        <p><b>Author: </b>{{book.bookAuthor}}</p><!--same for this-->
+    </div>
 </div>
