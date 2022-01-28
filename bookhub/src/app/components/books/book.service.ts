@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Book } from 'src/app/Book';
 import { BOOKS } from 'src/app/book-list';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,15 @@ export class BookService {
 
   constructor() { }
 
-  getBooks(): Book[]{
+  getBooks(): Book[]{//needs to become an observable, eventually
     return BOOKS;
+  }
+
+  //create new method to get book by description
+  getBookByDescription(): any{
+    let Book: Book[] = [];
+    for(let bookDesc of Book){
+        return bookDesc.bookDescription;
+    }
   }
 }
