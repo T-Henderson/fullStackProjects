@@ -17,4 +17,8 @@ export class BooksComponent implements OnInit {
     this.books = this.bookService.getBooks();
   }
 
+  onClick(){
+    return alert("This works!");
+  }
+
 }
