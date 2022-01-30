@@ -1,12 +1,25 @@
-<div class="books">
-    <div class="book" *ngFor="let book of books">
-        <p><b>Title: </b>{{book.bookTitle}}</p><!--make two-way data binding at some point
-            would allow the specific book clicked on to see all details of it-->
-        <p><b>Author: </b>{{book.bookAuthor}}</p><!--same for this-->
-        <!--ok so the problem is taht once clicked, it should expand and show details of book. Namely the book description.
-        so the set up could be something very similar to the above with the added addition of the button to do so-->
-        <div class="btn-text-center">
-            <button type="button" class="btn btn-primary" (click)="onClick()">Expand</button>
+<!--<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>Title</mat-card-title>
+        <mat-card-subtitle>Subtitle</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>-->
+        <div class="books">
+            <div class="book" *ngFor="let book of books">
+                <p><b>Title: </b>{{book.bookTitle}}</p><!--make two-way data binding at some point
+                    would allow the specific book clicked on to see all details of it-->
+                    <p><b>Author: </b>{{book.bookAuthor}}</p><!--same for this-->
+                    <!--ok so the problem is taht once clicked, it should expand and show details of book. Namely the book description.
+                        so the set up could be something very similar to the above with the added addition of the button to do so.\
+                        I think passing the id of the book as an arguement which is taken and if found equal to the bookDescription, that is bubbled 
+                        <p [@bodyExpansion]="state" class="expandable-content">
+                            Description: {{book.bookDescription}}
+                        </p>
+                        up to this portion of code, and shown-->
+            </div>
         </div>
-    </div>
-</div>
+    <!--</mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="toggle()" color="primary">Expand</button>
+    </mat-card-actions>
+</mat-card>-->

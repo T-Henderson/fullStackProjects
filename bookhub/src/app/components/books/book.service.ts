@@ -15,10 +15,9 @@ export class BookService {
   }
 
   //create new method to get book by description
-  getBookByDescription(): any{
-    let Book: Book[] = [];
-    for(let bookDesc of Book){
-        return bookDesc.bookDescription;
-    }
+  getBookDescription(): any{//need to change the return type at some point
+    let book: Book[] = []
+    
+    
   }
 }
