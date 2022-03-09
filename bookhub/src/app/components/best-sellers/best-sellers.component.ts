@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {trigger, state, style, transition, animate } from '@angular/animations';
-
+import { BOOKS } from 'src/app/book-list';
+import { Book } from 'src/app/Book';
+import { BookService } from '../books/book.service';
 
 @Component({
   selector: 'app-best-sellers',
@@ -17,16 +19,21 @@ import {trigger, state, style, transition, animate } from '@angular/animations';
 })
 export class BestSellersComponent implements OnInit {
 
-  title='test';
+  title='Best Seller';
   state='collapsed';
 
-  constructor() { }
+  books: Book[] = [];
+
+  constructor(private bookService: BookService) { }
 
   ngOnInit(): void {
+    //this is where the getBestSeller funciton should be called.
+    //this should be here so it's called automatically on startup
+    this.books = this.bookService.getBestSellers();
   }
 
   toggle(): void{
-    this.state = this.state === 'collapsed' ? 'expanded' : 'collapsed';
+    this.state = this.state === 'collapsed' ? 'expanded' : 'collapsed';//sets the state equal to a ternary operator
   }
 
 }

@@ -1,23 +1,32 @@
-<p>best-sellers works!</p>
-<mat-card class="card">
-    <mat-card-header>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-subtitle>Subtitle</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-        <p style="color: black;">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, praesentium sit tempora numquam vel odit
-      dolorem qui quod sint distinctio! Quasi exercitationem tempore voluptas quam voluptatibus distinctio ex magni
-      repellendus?
-        </p>
-        <p [@bodyExpansion]="state" class="expandable-content" style="color: black;">
-            [expandable] Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, praesentium sit tempora
-            numquam vel odit
-            dolorem qui quod sint distinctio! Quasi exercitationem tempore voluptas quam voluptatibus distinctio ex magni
-            repellendus?
-        </p>
- </mat-card-content>
-    <mat-card-actions>
-        <button mat-button (click)="toggle()" color="primary">Expand</button>
-    </mat-card-actions>
-</mat-card>
+<!--now the problem is assigning an index to each card. 
+so looking at a website that did it in React, it should be simple enough to do. 
+I should just be able to send the Book[] array and then use the id I placed in that file to be able to 
+iterate over it with a for loop in the ts file. I shoudl be able to use something similar to Book.length like I do in java 
+to just iterate over it without having to reassign anything for it. 
+-->
+<div><!--might need a container class-->
+    <div class="col-md-3 mx-auto my-5">
+        <mat-card class="card">
+            <mat-card-header>
+                <mat-card-title style="color: white">{{title}}</mat-card-title>
+                <mat-card-subtitle style="color: white">Subtitle</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p style="color: white;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, praesentium sit tempora numquam vel odit
+                    dolorem qui quod sint distinctio! Quasi exercitationem tempore voluptas quam voluptatibus distinctio ex magni
+                    repellendus?
+                </p>
+                <p [@bodyExpansion]="state" class="expandable-content" style="color: white;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, praesentium sit tempora
+                    numquam vel odit
+                    dolorem qui quod sint distinctio! Quasi exercitationem tempore voluptas quam voluptatibus distinctio ex magni
+                    repellendus?
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button (click)="toggle()" color="primary">Expand</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
