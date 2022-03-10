@@ -15,7 +15,7 @@ import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BestSellersComponent } from './components/best-sellers/best-sellers.component';
 import { BooksComponent } from './components/books/books.component';
-//import { LoginComponent } from './components/login/login.component';
+//replace login component
 
 
 @NgModule({
@@ -26,7 +26,7 @@ import { BooksComponent } from './components/books/books.component';
     FooterComponent,
     BestSellersComponent,
     BooksComponent,
-
+    
     
   ],
   imports: [
